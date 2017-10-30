@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html
+    xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+  <title>Error</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+  <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css"
+        th:href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css}"
+        rel="stylesheet" type="text/css" />
+  <link href="../../resources/css/app.css"
+        th:href="@{/resources/css/app.css}"
+        rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div th:replace="fragments/header :: header"/>
+
+<div class="container">
+  <div class="alert alert-danger">
+    <span th:text="${message}">Error message</span>
+  </div>
+
+  <div>
+    <a href="/" th:href="@{/}" th:text="#{link.return}"
+       class="btn btn-default btn-sm">Return</a>
+  </div>
+
+</div>
+
+<div th:replace="fragments/footer :: footer"/>
+
+</body>
+</html>

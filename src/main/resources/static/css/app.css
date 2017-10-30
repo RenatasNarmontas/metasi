@@ -1,0 +1,15 @@
+.panel {
+  border-color: #73369e;
+}
+.panel > .panel-heading {
+  background-color: #73369e;
+  border-color: #73369e;
+  color: #ffffff;
+}
+
+button.modal-header,
+div.modal-header,
+#myModalLabel {
+    background-color: #73369e;
+    color: #ffffff;
+}
