@@ -4,7 +4,7 @@ target/
 upload/
 download/
 out/
-gradle.properties 
+gradle.properties
 !gradle/wrapper/gradle-wrapper.jar
 
 ### STS ###
